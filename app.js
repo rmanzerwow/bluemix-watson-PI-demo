@@ -42,7 +42,7 @@ app.get('/', function(req, res) {
 });
 
 // uncomment this line to fix test
-//app.get('/status', status);
+app.get('/status', status);
 
 app.post('/api/profile', function(req, res, next) {
   var parameters = extend(req.body, { acceptLanguage : i18n.lng() });
